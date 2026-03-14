@@ -1,0 +1,51 @@
+Evaluation Test 1- Weather Info & Forecast Bot using Google
+Dialogflow ES
+
+Use Case
+You are required to build a chatbot using Google Dialogflow ES that can provide current and
+forecasted global weather information to its users.
+● Thebotwill be able to provide current weather information for a specific city.
+● Thebotwill be able to provide forecasted weather information for up to the next 8 days
+from the current date for a specific city
+
+Objectives
+1. Setup and configure Dialogflow ES:
+a. Build the conversational flow as shown in the sequence diagram provided
+below.
+b. Configure fulfillment webhook. (URL of your hosted code on any hosting service
+i.e ngrok)
+
+2. Build a REST API that can receive a webhook request from the Weather bot that you’ve
+built in Step 1. (Use backend language/framework of your choice)
+a. Receive the WebhookRequest from the bot and fetch the location (city) and
+date that the user has provided.
+i. Time should be fetched automatically from chat session details.
+ii. If no date is provided, current weather information will be relevant based
+on the chat session date.
+iii. From the start date calculate 8 days ahead to provide the forecasted
+weather
+
+b. Use this resource and its APIs to fetch the data.
+c. Return the response back to the bot and show it in the Dialogflow Chat interface.
+
+Architecture Diagram:
+![alt text](image.png)
+
+Conversational Flow Diagram:
+![alt text](image-1.png)
+
+
+Submission Criteria
+1. Record a demo video for the functioning DialogFlow ES bot which will show the
+interaction documented in the task above.
+a. Avoiceover is required that explains the contents of the video (suggested utility
+is OBS Studio to record Audio & Video)
+2. Upload the code for the REST API created in step 2 in objectives on a public GitHub
+repository for your GitHub account.
+3. Email the zip file for the DialogFlow ES agent and the repository link to
+submissions@interactcx.com
+● Test timeline is 7 days from the date of receipt acknowledgement.
+● Youareallowed to use resources publicly available on the internet.
+● Foranyqueries that you might encounter, contact us at
+candidatequeries@interactcx.com
+

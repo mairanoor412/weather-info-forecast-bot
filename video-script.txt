@@ -1,0 +1,113 @@
+========================================
+  WEATHER BOT DEMO VIDEO SCRIPT
+  Duration: 2-3 minutes
+  Language: English
+========================================
+
+[STEP 1 - INTRODUCTION] (Show Dialogflow console open)
+------------------------------------------------------
+SAY: "Hello everyone. In this video, I will demonstrate my Weather Information
+and Forecast chatbot. This bot is built using Dialogflow ES as the chatbot engine.
+The backend is built in Python using the FastAPI framework, which serves as the
+webhook REST API. And for fetching real-time weather data, I am using the
+OpenWeather API."
+
+
+[STEP 2 - GREETING] (Type "Hi" in Dialogflow "Try it now" chatbox)
+------------------------------------------------------
+TYPE: Hi
+
+SAY: "Let me start by greeting the bot. As you can see, the bot responds
+with a welcome message asking how it can help."
+
+EXPECTED RESPONSE: "This is Weather BOT. How may I help you?"
+
+
+[STEP 3 - ASK CURRENT WEATHER] (Type the message)
+------------------------------------------------------
+TYPE: What is the current weather?
+
+SAY: "Now I am asking the bot for the current weather. The bot is asking
+me to provide my city name."
+
+EXPECTED RESPONSE: "Please provide your city."
+
+
+[STEP 4 - PROVIDE CITY] (Type city name)
+------------------------------------------------------
+TYPE: Karachi
+
+SAY (English): "I have provided the city name Karachi. Now the webhook receives this
+request from Dialogflow, extracts the city name, calls the OpenWeather API,
+and sends back the current weather information. As you can see, it shows the
+temperature, feels like temperature, humidity, and weather description
+for Karachi."
+
+SAY (Roman Urdu): "Maine city ka naam Karachi diya hai. Ab Dialogflow ne webhook
+ko ek POST request bheji hai jismein city ka naam hai. Webhook ne yeh request
+receive ki, city ka naam extract kiya, aur OpenWeather API ko ek aur request
+bheji. OpenWeather API ne weather data ka response wapas bheja webhook ko.
+Phir webhook ne yeh response Dialogflow ko wapas bhej diya. Jaise aap dekh
+sakte hain, yeh Karachi ka temperature, feels like temperature, humidity aur
+weather description dikha raha hai."
+
+EXPECTED RESPONSE: "The current weather for Karachi is ... with a temperature
+of ...°C (feels like ...°C) and humidity at ...%."
+
+
+[STEP 5 - ASK FORECAST] (Type the message)
+------------------------------------------------------
+TYPE: Please tell me the weather forecast from tomorrow for Lahore
+
+SAY (English): "Now I am asking for the weather forecast for Lahore starting from
+tomorrow. The webhook extracts both the city name and the date from the
+request, then calls the OpenWeather Forecast API. As you can see, the bot
+returns the forecasted weather for multiple days, showing the temperature
+and weather condition for each day."
+
+SAY (Roman Urdu): "Ab maine Lahore ka weather forecast poochha hai kal se shuru
+karke. Webhook ne city ka naam aur date dono extract kiye request se, phir
+OpenWeather Forecast API ko call kiya. Jaise aap dekh sakte hain, bot ne
+multiple dinon ka forecasted weather diya hai, har din ka temperature aur
+weather condition dikha raha hai."
+
+EXPECTED RESPONSE: "The forecasted weather from ... to ... for Lahore is: ..."
+
+
+[STEP 6 - THANK THE BOT] (Type the message)
+------------------------------------------------------
+TYPE: Thanks
+
+SAY: "Now I am thanking the bot. It asks if there is anything else
+I can help with."
+
+EXPECTED RESPONSE: "Is there anything else I can help you with?"
+
+
+[STEP 7 - GOODBYE] (Type the message)
+------------------------------------------------------
+TYPE: No thanks
+
+SAY: "I say no thanks, and the bot ends the conversation with a
+goodbye message. This completes the full conversational flow."
+
+EXPECTED RESPONSE: "Thank you for contacting. Goodbye!"
+
+
+[STEP 8 - CLOSING] (Pause for 5 seconds)
+------------------------------------------------------
+SAY: "This was the complete demonstration of my Weather Information and
+Forecast chatbot. The architecture uses Dialogflow ES for natural language
+understanding, a FastAPI webhook for processing requests, and the OpenWeather
+API for fetching real-time weather data. Thank you for watching."
+
+
+========================================
+  RECORDING TIPS
+========================================
+- Speak slowly and clearly
+- Wait for bot response before speaking
+- Keep mouse movements smooth
+- Make sure Dialogflow chatbox is clearly visible
+- Total video should be 2-3 minutes
+========================================
